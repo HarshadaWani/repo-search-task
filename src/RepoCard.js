@@ -24,6 +24,11 @@ function RepoCard({ repo }) {
       <p style={{ maxWidth: "100px", maxHeight: "100px" }}>
         <span className="repo-heading">Language:</span> {repo.language}
       </p>
+      <p style={{ maxWidth: "100px", maxHeight: "100px" }}><span className="repo-heading">Watchers:</span> {repo.watchers_count}
+      </p>
+      <p style={{ maxWidth: "100px", maxHeight: "100px" }}><span className="repo-heading">Score:</span> {repo.score}</p>
+      <p style={{ maxWidth: "100px", maxHeight: "100px" }}><span className="repo-heading">Created At: </span>{new Date(repo.created_at).toDateString()}</p>
+      <p style={{ maxWidth: "100px", maxHeight: "100px" }}><span className="repo-heading">Updated At:</span> {new Date(repo.updated_at).toDateString()}</p>
     </div>
   );
 }
