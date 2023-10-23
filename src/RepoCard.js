@@ -16,8 +16,6 @@ function RepoCard({ repo }) {
         style={{
           maxWidth: "150px",
           maxHeight: "150px",
-          // marginBottom: "8px",
-          // marginTop: "10px",
           overflowY: "auto"
         }}
       >
